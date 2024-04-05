@@ -1,0 +1,33 @@
+
+.Circle{
+  background-color: greenyellow;
+  border-radius: 100%;
+  grid-column: 1 / -1; /* Span from the first to the last column */
+  grid-row: 1 / -1; /* Span from the first to the last row */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.Circle2{
+  height: 200px;
+  width:200px;
+  border-radius: 100%;
+  background-color: black;
+}
+.Parent{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Grid-container{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr); /* Three columns with equal width */
+  grid-gap: 5px; /* Gap between grid items */
+  position: relative;
+}
